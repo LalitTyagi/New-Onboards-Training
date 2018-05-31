@@ -1,4 +1,4 @@
--- ProblemSet03, May,30,2018 <Year>
+-- ProblemSet03, May,30,2018
 -- Submission by l.tyagi@accenture.com
 
 
