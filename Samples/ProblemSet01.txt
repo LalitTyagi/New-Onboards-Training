@@ -1,4 +1,4 @@
--- ProblemSet01, May,30,2018 <Year>
+-- ProblemSet01, May,30,2018
 -- Submission by l.tyagi@accenture.com
 
 CREATE TABLE Hotel (Hotel_No varchar(5) PRIMARY KEY,Name varchar(50),City varchar(50)); 
