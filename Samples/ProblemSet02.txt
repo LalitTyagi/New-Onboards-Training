@@ -1,4 +1,4 @@
--- ProblemSet02, May,30,2018 <Year>
+-- ProblemSet02, May,30,2018
 -- Submission by l.tyagi@accenture.com
 
 Create table Location (locationid number primary key, name varchar2(30), sunlight number, water number); 
@@ -83,4 +83,4 @@ AND Picked.GardenerFK = 2 ORDER BY Date
 
 /*Find out persons who picked from the same location as he/she planted.*/
 
-/*Create a view that lists all the plant names picked from all locations except ’West’ in the month of August.*/
+/*Create a view that lists all the plant names picked from all locations except â€™Westâ€™ in the month of August.*/
