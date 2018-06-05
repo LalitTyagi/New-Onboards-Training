@@ -8,18 +8,11 @@ arr = []
 count=0;
 
 for i in range(n):
-    
 	m=int(input())
-    
 	if(m%2==1):
-        
 	arr.append(m);
-        
 	count+=1
-
-
-if(count>0):
-    
+if(count>0):    
 	print(max(arr))
 elif
 	print("No Odd num.")
