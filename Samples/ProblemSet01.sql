@@ -63,7 +63,7 @@ select name, city from guest order by city;
 select * from room where hotel_type='N' order by price;
 
 /*List the number of hotels there are.*/
-select count(*) from room where hotel_type='N' order by price;
+select count(*) from Hotel;
 
 /*List the cities in which guests live. Each city should be listed only once.*/
 select distinct city from guest;
