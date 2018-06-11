@@ -81,6 +81,9 @@ SELECT Gardener.Name, Plant.Name, Date, Amount FROM Picked, Gardener, Plant
 WHERE Plant.PlantId = Picked.PlantFK AND Gardener.GardenerId = Picked.GardenerFK 
 AND Picked.GardenerFK = 2 ORDER BY Date
 
-/*Find out persons who picked from the same location as he/she planted.*/
+/* Find out persons who picked from the same location as he/she planted.  */
+select distinct(name) from gardener g  join planted pl on g.gardenerid=pl.gardenerfk inner join picked pi on g.gardenerid=pi.gardenerfk 
+	where pi.locationfk=pl.locationfk; 
 
-/*Create a view that lists all the plant names picked from all locations except ’West’ in the month of August.*/
+/* Create a view that lists all the plant names picked from all locations except ’West’ in the month of August. */
+create view plant_list as select name from plant where name not in (select pl.name from picked p join plant pl on pl.plantid=p.plantFK where locationFK=2 and substr(date1,4,3)!='AUG');
